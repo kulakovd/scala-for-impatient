@@ -1,0 +1,17 @@
+}
+	out.close()
+	for (line <- lines) out.println(line)
+	val out = new PrintWriter(file)
+
+	source.close()
+	val lines = source.getLines.toArray.reverse
+	val source = Source.fromFile(file, "UTF-8")
+
+	val file = new File("src/res/ch9ex1.txt")
+object Ch9_Ex1 extends App {
+
+import scala.io.Source
+
+import java.io.{File, PrintWriter}
+
+package ch9.ex1
